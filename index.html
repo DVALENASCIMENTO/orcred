@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento - R&D Techvale Solutions</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container" id="orcamento">
+
+    <header>
+      <h1>Orçamento de Serviços</h1>
+      <p>R&D Techvale Solutions</p>
+    </header>
+
+    <form id="cliente-form">
+      <input type="text" id="nomeCliente" placeholder="Nome do Cliente" required>
+      <input type="email" id="emailCliente" placeholder="Email do Cliente" required>
+      <input type="text" id="tipoHardware" placeholder="Tipo de Hardware">
+      <textarea id="infoHardware" placeholder="Informações do Hardware"></textarea>
+    </form>
+
+    <section id="catalogoServicos"></section>
+
+    <h2>Serviços Selecionados</h2>
+    <ul id="carrinho"></ul>
+
+    <div class="botoes">
+      <button onclick="salvarPDF()">Salvar PDF</button>
+      <button onclick="enviarWhatsApp()">Enviar WhatsApp</button>
+      <button onclick="enviarEmail()">Enviar Email</button>
+    </div>
+
+    <footer>
+      © 2025 R&D Techvale Solutions - Inovação e tecnologia para o seu sucesso
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script src="catalogo-servicos.js" defer></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

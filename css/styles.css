@@ -1,0 +1,96 @@
+:root {
+  --cor-fundo: #1E1E1E;
+  --cor-vermelho: #C0392B;
+  --cor-dourado: #D4AC0D;
+  --cor-clara: #F4F4F4;
+  --cor-laranja: #FFA500;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-clara);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header h1 {
+  color: var(--cor-laranja);
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+header p {
+  color: var(--cor-vermelho);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+form input, form textarea {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2C2C2C;
+  color: var(--cor-clara);
+}
+
+h2 {
+  color: var(--cor-dourado);
+  margin-top: 2rem;
+}
+
+#catalogoServicos > div {
+  margin-bottom: 1.2rem;
+}
+
+#catalogoServicos h3 {
+  color: var(--cor-vermelho);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#catalogoServicos label {
+  display: block;
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.botoes button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--cor-vermelho);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  background-color: var(--cor-dourado);
+  color: black;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
