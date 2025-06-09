@@ -1,4 +1,3 @@
-const servicos = /* Cole aqui o JSON do catálogo */;
 const carrinho = [];
 
 function renderCatalogo() {
