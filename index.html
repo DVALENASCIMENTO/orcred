@@ -21,8 +21,12 @@
       <textarea id="infoHardware" placeholder="Informações do Hardware"></textarea>
     </form>
 
-    <section id="catalogoServicos"></section>
+    <button id="toggleCatalogo">Mostrar Catálogo</button>
 
+    <div id="catalogoWrapper" style="display: none; max-height: 400px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; margin-top: 10px;">
+      <div id="catalogoServicos"></div>
+    </div>
+    
     <h2>Serviços Selecionados</h2>
     <ul id="carrinho"></ul>
 

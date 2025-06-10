@@ -67,6 +67,25 @@ h2 {
   margin-bottom: 0.2rem;
 }
 
+#catalogoWrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+  }
+
+  #catalogoWrapper h3 {
+    margin-top: 10px;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+
 .botoes {
   display: flex;
   flex-wrap: wrap;
