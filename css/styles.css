@@ -4,6 +4,7 @@
   --cor-dourado: #D4AC0D;
   --cor-clara: #F4F4F4;
   --cor-laranja: #FFA500;
+  --cor-escura: #2C2C2C;
 }
 
 body {
@@ -42,13 +43,24 @@ form input, form textarea {
   padding: 0.7rem;
   border: none;
   border-radius: 5px;
-  background-color: #2C2C2C;
+  background-color: var(--cor-escura);
   color: var(--cor-clara);
 }
 
 h2 {
   color: var(--cor-dourado);
   margin-top: 2rem;
+}
+
+/* === CATÁLOGO === */
+#catalogoWrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid var(--cor-escura);
+  padding: 10px;
+  background-color: var(--cor-escura);
+  border-radius: 5px;
+  margin-top: 1rem;
 }
 
 #catalogoServicos > div {
@@ -65,27 +77,19 @@ h2 {
   display: block;
   margin-left: 1rem;
   margin-bottom: 0.2rem;
+  color: var(--cor-clara);
 }
 
-#catalogoWrapper {
-    max-height: 400px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background: #f9f9f9;
-    border-radius: 5px;
-  }
+#catalogoServicos ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
 
-  #catalogoWrapper h3 {
-    margin-top: 10px;
-    color: #333;
-  }
+#catalogoServicos li label {
+  margin-left: 0.5rem;
+}
 
-  label {
-    display: block;
-    margin: 5px 0;
-  }
-
+/* === BOTÕES === */
 .botoes {
   display: flex;
   flex-wrap: wrap;
@@ -107,9 +111,34 @@ h2 {
   color: black;
 }
 
+/* === FOOTER === */
 footer {
   text-align: center;
   margin-top: 3rem;
   font-size: 0.9rem;
   color: #aaa;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #catalogoWrapper {
+    max-height: 300px;
+    font-size: 0.9rem;
+  }
+
+  .botoes {
+    flex-direction: column;
+  }
+
+  .botoes button {
+    width: 100%;
+  }
 }
